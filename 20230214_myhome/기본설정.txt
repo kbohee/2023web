@@ -1,0 +1,4 @@
+nanumgothic
+submenu 10px
+basic font 14px
+mainmenu 16px
