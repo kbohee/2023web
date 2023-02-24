@@ -1,0 +1,344 @@
+@charset "utf-8";
+html,body{height: 100%;}
+*{margin:0;padding:0;box-sizing: border-box;}
+li{list-style: none;}
+a:link,a:visited{text-decoration: none; color:#1e1e1e;}
+.clearfix:after{content:"";display: block;clear: both;}
+img{display: block;}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+}
+.menuFont{
+    font-size:20px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+}
+.container{
+    width:1280px;
+    margin:0 auto;
+    position: relative;
+}
+
+/* header */
+.hd{
+    padding:30px 0;
+    position: fixed;
+    width:100%;
+    z-index: 9999;
+}
+.hd:hover{
+    background-color: #fff;
+}
+/* 고치기 */
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0 #ccc;
+    -webkit-box-shadow: 0 0 0 #ccc;
+    box-shadow: 0 0 0 #ccc;
+    border: 0 none;
+    background: #fff;
+}
+.hd:hover h1{
+    background-image:url("../images/main/log.png");
+    width:100px;
+    height:20px;
+}
+.hd h1{
+    position: absolute;}
+.hd:after{
+    background-color: white;
+    display: block;
+    content:"";
+    font-size:16px;
+    letter-spacing: -0.6px;
+    position: absolute;
+    top:75px;
+    left:0;
+    transition-duration: 0.3s;
+    width:100%;
+    overflow:hidden;
+}
+.hd .navWrap{
+    height: 35px;
+
+}
+.hd h1{
+    width: 165px;
+    height: 35px;
+    float: left;
+}
+.hd h1 img{
+    width:100%;
+}
+
+.hd .gnb{
+    float:right;
+}
+.hd .gnb li{
+    float:left;
+    width: 170px;
+    position: relative;
+}
+.hd .gnb li a.fmenu{
+    display: inline-block;
+    cursor:pointer;
+    line-height: 35px;
+    text-align:center;
+    color:white;
+    height:80px;
+    width:80px;
+}
+.hd .gnb li a.fmenu:hover{
+    color:black;
+    border-bottom:4px solid #ffd44a;
+}
+.hd .gnb ul.submenu{
+    width:100%;
+    padding: 32px 0 0 0;
+    position: absolute;
+    z-index:1;
+}
+.hd .gnb ul.submenu li a{
+    color:black; 
+}
+.hd .gnb:hover{
+    display:flexbox;
+}
+.hd .gnb ul.fMenu{
+    position: relative;
+}
+ul.fMenu > li{
+    display: inline-block;
+    width:80px;
+    padding: 5px 10px;
+    text-align:center;
+    position: relative;
+}
+ul.fMenu > li ul.submenu{
+    display: none;
+    position: absolute;
+    font-size:15px;
+    color:black;
+    text-decoration:none solid rgba(30,30,30,0.6);
+}
+ul.fMenu > li ul.submenu > li{
+    display:inline-block;
+    padding: 5px 10px;
+    background : #eee;
+    text-align:center;
+}
+
+ul.fMenu > li:hover ul.submenu{
+    display: block;
+}
+    
+.slideWrap .sItem{
+    /* 브라우저의 크기에 따라 움직임 */
+    height:100vh;
+    min-height:400px;
+    width:100vh;
+}
+.slideWrap li{
+    background-size:cover;
+}
+.slideWrap .txtWrap{
+    display: block;
+    position: relative;
+    height:260px;
+    width:456px;
+    top:350px;
+    margin-left:100px;
+}
+.slideWrap .txtWrap2{
+    position: absolute;
+    height:500px;
+    width:456px;
+}
+.slideWrap .txtWrap h3{
+    height:210px;
+    width:456px;
+    color:white;
+    font-size:80px;
+    font-weight:700px;
+    text-indent:-2px;
+    letter-spacing: -2.6px;
+    line-height:104px;
+    vertical-align: bottom;
+    word-spacing: 0px;
+}
+.slideWrap .txtWrap p{
+    color:white;
+    height:36px;
+    width:456px;
+    margin:14px 0 0 0;
+    font-size:24px;
+    font-weight:500;
+    border-bottom:2px solid white;
+    padding-bottom:100px;
+}
+.slideWrap .txtWrap_swiper{
+    height:32px;
+    width:456px;
+    margin:30px 0 0 0;
+    position: relative;
+}
+.slideWrap .txtWrap_swiper li{
+    color:white;
+    float:left;
+    font-size:16px;
+    font-weight:500;
+}
+.slideWrap .txtWrap_swiper .s_name{
+    font-size:16px;
+    font-weight:500;
+    letter-spacing:-0.6px;
+    line-height:32px;
+    text-decoration:none solid rgb(255,255,255);
+    margin:0 0 0 30px;
+}
+.slideWrap .txtWrap_swiper .txtWrap_button2{
+    position: absolute;
+    right:0;
+    cursor:pointer;
+}
+.slideWrap .txtWrap_swiper .txtWrap_button2:hover, .txtWrap_button1:hover{
+    display:inline-block;
+    width:32px;
+    height:32px;
+    border-radius:16px;
+    background: #e2e1e1d2;
+    opacity:1.0;
+    background-position:50% 50%;
+    /* background-size:24px auto; */
+}
+.slideWrap .txtWrap_swiper .txtWrap_button1{
+    float:right;
+    right:30px;
+    position:absolute;
+    cursor:pointer;
+}
+
+/* section */
+.content{
+    height: 1820px;
+    width:1280px;
+    padding:160px 32px 160px 32px;
+    position: relative;
+}
+.content h2{
+    font-size:44px;
+    font-weight:700;
+    letter-spacing:-2px;
+    line-height:62px;
+    text-decoration: none solid rgb(30,30,30);
+    color:#1e1e1e;
+}
+.content .sub-area {
+    position: relative;
+    padding-bottom: 36px;
+    text-align: left;
+}
+.content .sub-area:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 5px;
+    background-color: #ffd44a;
+}
+.content .sub_area p{
+    padding-left: 624px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: -0.6px;
+    display: block;
+    margin-bottom:80px;
+}
+.content .link-list{
+    position: relative;
+    margin-top:10px;
+    height:580px;
+    width:1216px;
+    display: block;
+    float:left;
+}
+.content .link-list .link{
+    position: relative;
+    top:0;
+    left:0;
+    display: block;
+    margin-right:10px;
+}
+.content .link-list .link:hover{
+    cursor:pointer;
+    top:-15px;
+    box-shadow:0 20px 40px 0 rgb(96 97 112 / 25%);
+    transition: top .2s ease-in-out,box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+}
+.thumb{
+    width:384px;
+    height:450px;
+    float:left;
+    margin-right:30px;
+    margin-bottom:350px;
+}
+.thumb:last-child{
+    margin-right:0;
+}
+.content .link-list .txtbox{
+    height:86px;
+    width:352px;
+    padding:20px 16px 0 16px;
+    display: block;
+    cursor:pointer;
+}
+.content .link-list .txtbox .tit{
+    text-align:left;
+    padding: 0 28px 0 0;
+    font-size:21px;
+    display: block;
+}
+.content .link-list .txt{
+    float:left;
+    font-size:15px;
+    width: 353px;
+    letter-spacing: -0.6px;
+    margin:7px 0 0 0;
+    display: block;
+}
+.content .txtbox2{
+    height:338px;
+    width:1114px;
+    background-color: #ffd44a;
+    display: block;
+    position: relative;
+    margin-top:800px;
+}
+.content .txtbox2_content{
+    margin-top:130px;
+    margin-left:80px;
+    position: absolute;
+}
+.content .txtbox2 h2{
+    width:700px;
+    font-size:28px;
+    font-weight:500;
+    margin-bottom:20px;
+    letter-spacing: -1px;
+    line-height:40px;
+}
+content .txtbox2 p{
+    font-size:15px;
+    line-height:1.47;
+    font-weight:500;
+    width:100px;
+    margin-top:50px;
+}
+.content .txtbox_image{
+    position: absolute;
+    right:10px;
+    bottom:180px;
+}
